@@ -5,7 +5,7 @@
         return [param]
     }
 
-    const createArrayWithGeneric = <boolean>(param: boolean): boolean [] =>{
+    const createArrayWithGeneric = <T>(param: T): T [] =>{
         return [param]
     }
 
@@ -40,4 +40,6 @@
     const student1 = addCourseToStudent({name: "Alice", age: 20});
     const student2 = addCourseToStudent({name: "Bob", age: 22, grade: "A"});
 
+    console.log(student1); // { name: 'Alice', age: 20, course: 'TypeScript Basics' }
+    console.log(student2); // { name: 'Bob', age: 22, grade: 'A', course: 'TypeScript Basics' }
 }
