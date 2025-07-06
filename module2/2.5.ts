@@ -1,5 +1,5 @@
 {
-    // geenric function
+    // generic function
 
     const createArray = (param: string): string [] =>{
         return [param]
@@ -10,7 +10,7 @@
     }
 
     const res1 = createArray("Hello World");
-    const res2 = createArrayWithGeneric<boolean>(true);
+    const res2 = createArrayWithGeneric<boolean>(true); 
 
     type user = {
         id: number,
